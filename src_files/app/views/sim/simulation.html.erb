@@ -1,0 +1,49 @@
+<head>
+<meta http-equiv="refresh" content="1">
+  <style>
+table, th, td {
+  text-align: center;
+  border: 1px solid black;
+}
+h1{
+  text-align:center;
+}
+</style>
+
+</head>
+
+<body>
+<div >
+<center>
+<table>
+<h1>JOB POOL</h1>
+<tr>
+<% @job.each do |d|%>
+<td>P<%= d[:num] %></td>
+<%end%>
+</tr>
+<tr>
+<% @job.each do |d|%>
+<td><%= d[:wt] %></td>
+<%end%>
+</tr>
+</table>
+</center>
+<h1>READY QUEUE<h1>
+<center>
+<table>
+<tr>
+<% @ready.each do |d|%>
+<td><%= d[:num] %></td>
+<%end%>
+</tr>
+<tr>
+<% @ready.each do |d|%>
+<td><%= d[:wt] %></td>
+<%end%>
+</tr>
+</table>
+</center>
+</div>
+
+</body>

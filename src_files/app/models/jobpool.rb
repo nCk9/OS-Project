@@ -1,0 +1,2 @@
+class Jobpool < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class Readyqueue < ApplicationRecord
+end
